@@ -1,0 +1,27 @@
+<!--pages/todoList/toduList.wxml-->
+<view class="container">
+<view class="box">
+
+<view class="row center">
+<image class="widget__arrow" src="/assets/flower.png">
+</image>
+<text class="title">ToDo清单</text></view>
+
+<view class="row">
+<input class="item-input" placeholder="请输入todo" value="{{addText}}" bindinput="setInput" focus="{{focus}}" />
+<view class="addForm-btn">
+        <button class="mini-btn" bindtap="addTodo" size="mini">添加</button>
+        <button class="mini-btn" bindtap="addTodoHide" size="mini">清空</button>
+</view></view>
+
+ <view wx:for="{{list}}" wx:for-item="item" class="page-section">
+        <checkbox-group name="checkbox"  wx:if="{{item.status===1}}" bindtap="changeStatus" data-item="{{item.id}}">
+          <label><checkbox value="checkbox1"/>{{item.name}}</label>
+        </checkbox-group>
+      </view>
+  <block wx:for="{{list}}" wx:for-item="item" class="page-section">
+    <view class="item" wx:if="{{item.status===0}}"  bindtap="changeStatus" data-item="{{item.id}}">{{item.name}}\n</view>
+  </block>
+  </view>
+
+</view>

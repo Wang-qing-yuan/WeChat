@@ -1,0 +1,8 @@
+<!--pages/song/song.wxml-->
+<block wx:for="{{songs}}" wx:for-item="item">
+<view class="song">
+ <text bindtap="onMyEvent" data-item="{{item}}" >
+ 歌曲名：{{item.name}}</text>
+</view>
+</block>
+

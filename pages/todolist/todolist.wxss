@@ -1,0 +1,58 @@
+/* pages/todolist/todolist.wxss */
+.container{
+min-height: 100vh;
+}
+.row{
+  display: flex;
+}
+.center{
+  text-align: center;
+}
+.widget__arrow{
+  height: 50px;
+  width: 50px;
+}
+.title{
+  font-size: 30px;
+}
+.item-input{
+  border: 1px solid white;
+  color: white;
+  height: 50px;
+  border-radius: 20px;
+}
+.box{
+  /* border: 1px solid white;
+  border-radius: 20px;
+  width: 300px; */
+  word-wrap:break-word;
+  text-align: center;
+}
+.mini-btn{
+margin-top: 10px;
+border-radius: 20px;
+margin-left: 10px;
+color: white;
+background-color: #f48fb1 ;
+}
+.page-section{
+  border-bottom: 1px solid white;
+  text-align: left;
+  width: 80%;
+  margin-left: 30px;
+  /* height: 35px; */
+  /* padding-top: 7px; */
+  word-wrap:break-word;
+  line-height: 50px;
+}
+.item{
+  border-bottom: 1px solid white;
+  text-decoration:line-through;
+  text-align: left;
+  width: 80%;
+  margin-left: 30px;
+  height: 35px;
+  padding-top: 7px;
+  word-wrap:break-word;
+  
+}

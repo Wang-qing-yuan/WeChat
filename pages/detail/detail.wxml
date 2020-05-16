@@ -1,0 +1,12 @@
+<!--pages/detail/detail.wxml-->
+<view class="card">
+<view>
+<text>排行榜:{{item.id}}</text>
+</view>
+<view>
+<text>歌曲名字:{{item.name}}</text>
+</view>
+<view>
+<text>歌手:{{item.author}}</text>
+</view>
+</view>

@@ -1,0 +1,20 @@
+/* pages/detail/detail.wxss */
+.row{
+  display: flex;
+  margin: 20px;
+}
+view{
+  margin:15px;
+}
+text{
+  height: 20px;
+  border-radius: 10px;
+  background-color: #fce4ec;
+  padding: 10px;
+}
+.card{
+  margin-left: 20px;
+  padding: 10px;
+  background-color: #f48fb1;
+  border-radius: 10px;
+}
